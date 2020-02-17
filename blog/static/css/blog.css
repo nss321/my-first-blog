@@ -19,13 +19,14 @@ h1,h2,h3,h4{
   font-family: 'Lobster', serif;
 }
 .date{
-  color: #828282;
+  padding-bottom: 0px;
+  color: #4a0d78;
 }
 .save{
   float:right;
 }
 .post-form textarea, .post-form input{
-  width: 100;
+  width: 700;
 }
 .top-menu, .top-menu:hover, .top-menu:visited{
   color: #ffffff;
@@ -39,4 +40,13 @@ h1,h2,h3,h4{
 
 .post h1 a, .post h1 a:visited {
   color: #000000;
+}
+#grid h2{
+  font-family: 'Lobster',monospace;
+  padding: 5px;
+  border-bottom: 2px solid gray;
+}
+#post_detail_name h1{
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
