@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+  {% if user.is_active %}
+    <h2>{{user.username}}(으)로 로그인 하셨습니다.</h2>
+    <a href="{% url 'logout' %}">로그아웃</a>
+
+  {% else %}
+    {% if form.errors %}
+      <p>ID 또는 PW가 일치하지 않습니다.</p>
+    {% endif %}
+
+    <form action="{% url 'login' %}" method="post">
+      {% csrf_token %}
+      <input type="hidden" name="next" value=""/>
+      {{ form.as_p }}
+      <button type="submit">로그인</button>
+    </form>
+  {% endif %}
+
+{% endblock %}

@@ -12,6 +12,12 @@ h1 a {
   font-size: 36pt;
   text-decoration: none;
 }
+.page-header p{
+  /* font-family: 'Lobster',serif; */
+  font-size: 17pt;
+  text-decoration: none;
+  padding-top: 7px;
+}
 .content{
   margin-left: 40px;
 }
@@ -28,7 +34,7 @@ h1,h2,h3,h4{
 .post-form textarea, .post-form input{
   width: 700;
 }
-.top-menu, .top-menu:hover, .top-menu:visited{
+.top-menu, .top-menu:visited{
   color: #ffffff;
   float: right;
   font-size: 26pt;
@@ -41,11 +47,16 @@ h1,h2,h3,h4{
 .post h1 a, .post h1 a:visited {
   color: #000000;
 }
+
 #grid h2{
+  width: 70vw;
   font-family: 'Lobster',monospace;
   padding: 5px;
-  border-bottom: 2px solid gray;
+  border-bottom: 5px dotted purple;
+  /* 545px 아래로 미디어 쿼리 적용해야함 */
+  /* 가능하면  1200 이후로는 좌측에 글 목록 나오게*/
 }
+
 #post_detail_name h1{
   margin-bottom: 10px;
   margin-top: 5px;
